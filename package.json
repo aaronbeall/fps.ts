@@ -1,32 +1,50 @@
 {
   "name": "stats.ts",
   "version": "0.18.0",
-  "description": "JavaScript Performance Monitor",
+  "description": "JavaScript Performance Monitor - TypeScript Edition",
   "main": "build/stats.js",
   "module": "build/stats.module.js",
-  "repository": "https://github.com/aaronbeall/stats.ts",
-  "directories": {
-    "example": "examples"
+  "types": "build/Stats.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/Stats.d.ts",
+      "import": "./build/stats.module.js",
+      "require": "./build/stats.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronbeall/stats.ts.git"
   },
   "files": [
-    "build",
-    "src"
+    "build/*.js",
+    "build/*.d.ts",
+    "build/*.map",
+    "src/**/*.ts",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "rollup -c",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "performance",
     "fps",
-    "stats"
+    "stats",
+    "monitor",
+    "typescript",
+    "browser",
+    "webgl",
+    "animation"
   ],
   "author": "aaronbeall <aaronbeall@example.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aaronbeall/stats.ts/issues"
   },
-  "homepage": "https://github.com/aaronbeall/stats.ts",
+  "homepage": "https://github.com/aaronbeall/stats.ts#readme",
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.3.0",
