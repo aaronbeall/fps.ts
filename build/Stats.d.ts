@@ -16,6 +16,7 @@ declare global {
  * @author Aaron Beall / https://abeall.com
  */
 declare class Stats {
+    static Panel: typeof Panel;
     REVISION: number;
     dom: HTMLDivElement;
     domElement: HTMLDivElement;
@@ -55,5 +56,5 @@ declare class Panel {
     constructor(name: string, fg: string, bg: string);
     update(value: number, maxValue: number): void;
 }
-export { Stats as default, Stats, Panel };
+export default Stats;
 //# sourceMappingURL=Stats.d.ts.map

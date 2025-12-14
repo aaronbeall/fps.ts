@@ -108,6 +108,7 @@ class Panel {
         this.context.fillRect(this.GRAPH_X + this.GRAPH_WIDTH - this.PR, this.GRAPH_Y, this.PR, this.round((1 - (value / maxValue)) * this.GRAPH_HEIGHT));
     }
 }
+Stats.Panel = Panel;
 
-export { Panel, Stats, Stats as default };
+export { Stats as default };
 //# sourceMappingURL=stats.module.js.map
