@@ -33,7 +33,7 @@ npm install stats.ts
 
 ### Usage ###
 
-```javascript
+```ts
 import Stats from 'stats.ts';
 
 const stats = new Stats();
