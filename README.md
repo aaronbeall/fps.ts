@@ -10,6 +10,8 @@ This class provides a simple info box that will help you monitor your code perfo
 * **MB** MBytes of allocated memory. (Run Chrome with `--enable-precise-memory-info`)
 * **CUSTOM** User-defined panel support.
 
+Forked from [mrdoob's stats.js](https://github.com/mrdoob/stats.js)
+
 
 ### Screenshots ###
 
