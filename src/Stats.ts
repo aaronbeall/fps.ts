@@ -1,8 +1,3 @@
-/**
- * @author mrdoob / http://mrdoob.com/
- * @author Aaron Beall / https://github.com/aaronbeall
- */
-
 interface PerformanceMemory {
   usedJSHeapSize: number;
   jsHeapSizeLimit: number;
@@ -19,6 +14,10 @@ declare global {
   }
 }
 
+/**
+ * @author mrdoob / http://mrdoob.com/
+ * @author Aaron Beall / https://github.com/aaronbeall
+ */
 class Stats {
 
   REVISION = 18;
