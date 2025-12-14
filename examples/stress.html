@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>stats.js - stress test</title>
+		<title>stats.ts - stress test</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<style>
 			body {
@@ -14,11 +14,11 @@
 		<script src="../build/stats.min.js"></script>
 		<script>
 
-			var array = [];
+			const array = [];
 
-			for ( var i = 0; i < 500; i ++ ) {
+			for ( let i = 0; i < 500; i ++ ) {
 
-				var stats = new Stats();
+				const stats = new Stats();
 				stats.dom.style.position = 'relative';
 				stats.dom.style.float = 'left';
 				document.body.appendChild( stats.dom );
@@ -29,9 +29,9 @@
 
 			function animate() {
 
-				for ( var i = 0; i < array.length; i ++ ) {
+				for ( let i = 0; i < array.length; i ++ ) {
 
-					var stats = array[ i ];
+					const stats = array[ i ];
 					stats.update();
 
 				}
