@@ -28,13 +28,15 @@ This class provides a simple info box that will help you monitor your code perfo
 
 ### Installation ###
 ```bash
-npm install stats.js
+npm install stats.ts
 ```
 
 ### Usage ###
 
 ```javascript
-var stats = new Stats();
+import Stats from 'stats.ts';
+
+const stats = new Stats();
 stats.showPanel( 1 ); // 0: fps, 1: ms, 2: mb, 3+: custom
 document.body.appendChild( stats.dom );
 
@@ -59,5 +61,5 @@ requestAnimationFrame( animate );
 You can add this code to any page using the following bookmarklet:
 
 ```javascript
-javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://aaronbeall.github.io/stats.ts/build/stats.min.js';document.head.appendChild(script);})()
+javascript:(function(){const script=document.createElement('script');script.onload=function(){const stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://aaronbeall.github.io/stats.ts/build/stats.min.js';document.head.appendChild(script);})()```
 ```
