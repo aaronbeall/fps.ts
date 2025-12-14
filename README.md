@@ -61,5 +61,5 @@ requestAnimationFrame(animate);
 You can add this code to any page using the following bookmarklet:
 
 ```javascript
-javascript:(function(){const script=document.createElement('script');script.onload=function(){const stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://aaronbeall.github.io/fps.ts/build/stats.min.js';document.head.appendChild(script);})()```
+javascript:(function(){const script=document.createElement('script');script.onload=function(){const stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://aaronbeall.github.io/fps.ts/build/stats.min.js';document.head.appendChild(script);})()
 ```
