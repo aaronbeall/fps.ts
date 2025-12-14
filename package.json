@@ -1,5 +1,5 @@
 {
-  "name": "stats.ts",
+  "name": "fps.ts",
   "version": "0.18.0",
   "description": "JavaScript Performance Monitor - TypeScript Edition",
   "main": "build/stats.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aaronbeall/stats.ts.git"
+    "url": "git+https://github.com/aaronbeall/fps.ts.git"
   },
   "files": [
     "build/*.js",
@@ -42,9 +42,9 @@
   "author": "aaronbeall <aaronbeall@example.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aaronbeall/stats.ts/issues"
+    "url": "https://github.com/aaronbeall/fps.ts/issues"
   },
-  "homepage": "https://github.com/aaronbeall/stats.ts#readme",
+  "homepage": "https://github.com/aaronbeall/fps.ts#readme",
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.3.0",

@@ -1,4 +1,4 @@
-stats.ts
+fps.ts
 ========
 
 #### JavaScript Performance Monitor - TypeScript Edition ####
@@ -13,28 +13,28 @@ This class provides a simple info box that will help you monitor your code perfo
 
 ### Screenshots ###
 
-![fps.png](https://raw.githubusercontent.com/aaronbeall/stats.ts/master/files/fps.png)
-![ms.png](https://raw.githubusercontent.com/aaronbeall/stats.ts/master/files/ms.png)
-![mb.png](https://raw.githubusercontent.com/aaronbeall/stats.ts/master/files/mb.png)
-![custom.png](https://raw.githubusercontent.com/aaronbeall/stats.ts/master/files/custom.png)
+![fps.png](https://raw.githubusercontent.com/aaronbeall/fps.ts/master/files/fps.png)
+![ms.png](https://raw.githubusercontent.com/aaronbeall/fps.ts/master/files/ms.png)
+![mb.png](https://raw.githubusercontent.com/aaronbeall/fps.ts/master/files/mb.png)
+![custom.png](https://raw.githubusercontent.com/aaronbeall/fps.ts/master/files/custom.png)
 
 
 ### Examples ###
 
-* [Basic](https://aaronbeall.github.io/stats.ts/examples/basic.html)
-* [Custom Panel](https://aaronbeall.github.io/stats.ts/examples/custom.html)
-* [Stress Test](https://aaronbeall.github.io/stats.ts/examples/stress.html)
+* [Basic](https://aaronbeall.github.io/fps.ts/examples/basic.html)
+* [Custom Panel](https://aaronbeall.github.io/fps.ts/examples/custom.html)
+* [Stress Test](https://aaronbeall.github.io/fps.ts/examples/stress.html)
 
 
 ### Installation ###
 ```bash
-npm install stats.ts
+npm install fps.ts
 ```
 
 ### Usage ###
 
 ```ts
-import Stats from 'stats.ts';
+import Stats from 'fps.ts';
 
 const stats = new Stats();
 stats.showPanel( 1 ); // 0: fps, 1: ms, 2: mb, 3+: custom
@@ -61,5 +61,5 @@ requestAnimationFrame(animate);
 You can add this code to any page using the following bookmarklet:
 
 ```javascript
-javascript:(function(){const script=document.createElement('script');script.onload=function(){const stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://aaronbeall.github.io/stats.ts/build/stats.min.js';document.head.appendChild(script);})()```
+javascript:(function(){const script=document.createElement('script');script.onload=function(){const stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='https://aaronbeall.github.io/fps.ts/build/stats.min.js';document.head.appendChild(script);})()```
 ```

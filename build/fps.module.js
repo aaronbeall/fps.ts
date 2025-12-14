@@ -111,4 +111,4 @@ class Panel {
 Stats.Panel = Panel;
 
 export { Stats as default };
-//# sourceMappingURL=stats.module.js.map
+//# sourceMappingURL=fps.module.js.map

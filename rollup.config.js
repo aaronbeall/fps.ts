@@ -7,20 +7,20 @@ export default {
 		{
 			format: 'umd',
 			name: 'Stats',
-			file: 'build/stats.js',
+			file: 'build/fps.js',
 			sourcemap: true
 		},
 		{
 			format: 'umd',
 			name: 'Stats',
-			file: 'build/stats.min.js',
+			file: 'build/fps.min.js',
 			sourcemap: true,
 			plugins: [terser()]
 		},
 		{
 			format: 'es',
 			name: 'Stats',
-			file: 'build/stats.module.js',
+			file: 'build/fps.module.js',
 			sourcemap: true
 		}
 	],

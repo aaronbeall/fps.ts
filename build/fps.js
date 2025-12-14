@@ -119,4 +119,4 @@
     return Stats;
 
 }));
-//# sourceMappingURL=stats.js.map
+//# sourceMappingURL=fps.js.map
